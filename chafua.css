@@ -1,0 +1,240 @@
+
+body {
+    display: block;
+    background-color:dimgrey;
+    
+}
+
+
+button {
+    display: block;
+    padding: 10px 15px; 
+    margin-bottom: 10px;
+    margin-left: 12.5px;
+    border-radius: 10px;
+    background-color: blue;
+    
+}
+
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    #removeButton {
+        padding: 10px 15px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        cursor: pointer;}
+
+    #ndengu {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #chapo {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #ugali {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #mukimo {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #rice {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #pilau {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #beans {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #fish {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #chuma {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #clear {
+        padding: 10px 15px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #viewTotal {
+        padding: 10px 15px;
+        background-color: green;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #chapoDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+    
+
+    #ugaliDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #mukimoDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #riceDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #pilauDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #ndenguDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #beansDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #fishDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #chumaDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #label {
+        text-decoration: underline;
+        font-size: 30px;
+
+    }
+   #firstHeader {
+    text-decoration: underline;
+    text-align: right;
+    font-size: 30px;  
+   }
+
+   #chapatiLabelIncrease {
+    font-size: 20px; 
+   }
+
+   #chapatiIncrease {
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 3px;
+   }
+
+   #chapatiDecrease {
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 3px;
+   }
+
+
+
+
+   

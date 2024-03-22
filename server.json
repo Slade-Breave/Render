@@ -1,0 +1,14 @@
+{
+    "name": "my-project",
+    "version": "1.0.0",
+    "description": "A project that uses express and fs modules",
+    "main": "index.js",
+    "scripts": {
+        "start": "node backend.js"
+    },
+    "dependencies": {
+        "express": "^4.19.1",
+        "fs": "0.0.1-security",
+        "node-fetch": "^3.3.2"
+    }
+}

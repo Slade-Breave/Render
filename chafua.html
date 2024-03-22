@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chafua.css">
+</head>
+<style>
+    
+body {
+    display: block;
+    background-color:dimgrey;
+    
+}
+
+
+button {
+    display: block;
+    padding: 10px 15px; 
+    margin-bottom: 10px;
+    margin-left: 12.5px;
+    border-radius: 10px;
+    background-color: blue;
+    
+}
+
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    #removeButton {
+        padding: 10px 15px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        cursor: pointer;}
+
+    #ndengu {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #chapo {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #ugali {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #mukimo {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #rice {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #pilau {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #beans {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #fish {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #chuma {
+        padding: 10px 15px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #clear {
+        padding: 10px 15px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #viewTotal {
+        padding: 10px 15px;
+        background-color: green;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    #chapoDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+    
+
+    #ugaliDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #mukimoDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #riceDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #pilauDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #ndenguDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #beansDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #fishDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #chumaDisplay {
+        text-align: right;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+
+    #label {
+        text-decoration: underline;
+        font-size: 30px;
+
+    }
+   #firstHeader {
+    text-decoration: underline;
+    text-align: right;
+    font-size: 30px;  
+   }
+
+   #chapatiLabelIncrease {
+    font-size: 20px; 
+   }
+
+   #chapatiIncrease {
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 3px;
+   }
+
+   #chapatiDecrease {
+    padding: 5px 15px;
+    background-color: white;
+    margin-top: 3px;
+   }
+
+
+
+
+   
+</style>
+<body>
+    <button id="chapo">Chapo</button>
+    <button id="ugali">Ugali</button>
+    <button id="mukimo">Mukimo</button>
+    <button id="rice">Rice</button>
+    <button id="pilau">Pilau</button>
+    <button id="ndengu">Ndengu</button>
+    <button id="beans">Beans</button>
+    <button id="fish">Fish</button>
+    <button id="chuma">Chuma</button>
+    <button id="chapoNdengu">Chapo+Ndengu</button>
+    <button id="registerUsers">Register Users</button>
+   
+<script src="server.js"></script>
+<script>
+{
+    
+        let counters = {
+                            chapati: 0,
+                            ugali: 0,
+                            mukimo: 0,
+                            rice: 0,
+                            pilau: 0,
+                            ndengu: 0,
+                            beans: 0,
+                            fish: 0,
+                            chuma: 0,
+                            chapoNdengu: 0,
+                    };
+
+// Initialize counters from local storage on page load
+Object.keys(counters).forEach(item => {
+    const storedValue = localStorage.getItem(item);
+    if (storedValue !== null) {
+        counters[item] = parseInt(storedValue, 10);
+    }
+});
+    
+    
+document.getElementById('chapo').addEventListener('click', function() {
+
+            var searchName = prompt("What number is initating the payment. Use the format 254xxxxxxxxx");
+            fetch('/sendSearchName', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ value: searchName})
+            })
+            .then(response => {
+                if (response.ok) {
+                console.log('Value sent to server successfully');
+                } else {
+                console.error('Error sending value to server');
+                }
+            })
+            .catch(error => {
+                console.error('Error sending value to server:', error);
+            });
+
+
+
+                            var quantity = prompt(`Enter the quantity of chapati:`);
+                            var quantityNumber = Number(quantity);
+
+                            if (quantityNumber) {
+                                counters.chapati += quantityNumber;
+                                localStorage.setItem("chapati", counters.chapati);
+
+                                            fetch('/sendChapatiValue', {
+                                            method: 'POST',
+                                            headers: {
+                                            'Content-Type': 'application/json'
+                                            },
+                                            body: JSON.stringify({ value: quantityNumber })
+                                            })
+                                            .then(response => {
+                                            if (response.ok) {
+                                            console.log('Value sent to server successfully');
+                                            } else {
+                                            console.error('Error sending value to server');
+                                            }
+                                            })
+                                            .catch(error => {
+                                            console.error('Error sending value to server:', error);
+                                            });       
+
+
+                            } else if (Number.isNaN(quantityNumber)) {
+                                alert("Quantity should be a number");
+                                return;
+                            } else {
+                                alert(`Invalid order. Quantity is required for chapati`);
+                                return;
+                            }
+
+                    
+                                                                // Send a request to the server when the chapo button is clicked
+                                                                fetch('/chapoClick', { method: 'POST' })
+                                                                .then(response => {
+                                                                if (response.ok) {
+                                                                console.log('Chapo button click sent to server successfully');
+                                                                } else {
+                                                                console.error('Error sending button click to server');
+                                                                }
+                                                                })
+                                                                .catch(error => {
+                                                                console.error('Error sending button click to server:', error);
+                                                                });            
+                                                                });
+
+
+
+
+{
+    document.getElementById('ugali').addEventListener('click', function() {
+      // Send a request to the server when the chapo button is clicked
+      fetch('/ugaliClick', { method: 'POST' })
+        .then(response => {
+          if (response.ok) {
+            console.log('Button click sent to server successfully');
+          } else {
+            console.error('Error sending button click to server');
+          }
+        })
+        .catch(error => {
+          console.error('Error sending button click to server:', error);
+        });
+    });
+
+}
+
+  
+
+document.getElementById('chapoNdengu').addEventListener('click', function() {
+
+
+    var quantity = prompt(`Enter the quantity of chapatis needed:`);
+    var quantityNumber = Number(quantity);
+
+                        if (quantityNumber) {
+                        counters.chapoNdengu += quantityNumber;
+                        localStorage.setItem("chapatiNdengu", counters.chapoNdengu);
+                        
+                        fetch('/sendChapoNdenguValue', {
+                        method: 'POST',
+                        headers: {
+                        'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ value: quantityNumber })
+                        })
+                        .then(response => {
+                        if (response.ok) {
+                        console.log('Value sent to server successfully');
+                        } else {
+                        console.error('Error sending value to server');
+                        }
+                        })
+                        .catch(error => {
+                        console.error('Error sending value to server:', error);
+                        });       
+                        } else if (Number.isNaN(quantityNumber)) {
+                            alert("Quantity should be a number");
+                        } else {
+                            alert(`Invalid order. Quantity is required for chapati`);
+                        }
+
+
+                                    fetch('/chapoNdenguClick', { method: 'POST' })
+                                    .then(response => {
+                                    if (response.ok) {
+                                    console.log('ChapoNdengu button click sent to server successfully');
+                                    } else {
+                                    console.error('Error sending button click to server');
+                                    }
+                                    })
+                                    .catch(error => {
+                                    console.error('Error sending button click to server:', error);
+                                    });            
+                        });
+
+}
+
+document.getElementById('registerUsers').addEventListener('click', function() {
+
+            fetch('/registerUsersClick', { method: 'POST' })
+            .then(response => {
+            if (response.ok) {
+            console.log('Register users button click sent to server successfully');
+            } else {
+            console.error('Error sending button click to server');
+            }
+            })
+            .catch(error => {
+            console.error('Error sending button click to server:', error);
+            });            
+});
+
+
+</script>
+
+</body>
+</html>
